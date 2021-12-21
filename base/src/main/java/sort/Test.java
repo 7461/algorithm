@@ -1,5 +1,7 @@
 package sort;
 
+import random.BuildArr;
+
 import java.util.Arrays;
 
 /**
@@ -9,7 +11,7 @@ import java.util.Arrays;
  */
 public class Test {
     public static void main(String[] args) {
-        Integer[] preIntegers = {9, 8, 6, 4, 11, 100, 0, 2, 2, 5};
+        Integer[] preIntegers = BuildArr.buildArr(10, 100);
         System.out.println(Arrays.asList(preIntegers));
         SortUtil.sort(preIntegers,new SelectionSort<Integer>(),new IntegerComparator());
         //SortUtil.sort(preIntegers,new BubbleSort<Integer>(),new IntegerComparator());
