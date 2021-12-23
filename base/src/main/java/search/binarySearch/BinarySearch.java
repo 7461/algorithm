@@ -15,15 +15,18 @@ public class BinarySearch implements Search {
             return index;
         }
         int l = 0;
-        int r = arr.length - 1;
+        int r = arr.length-1;
         int mid = (l + r) / 2;
         while (l<=r) {
-            if (arr[mid] <= num) {
+            if (arr[mid]== num){
                 index = mid;
-                l = mid;
+                r = mid-1;
+            }
+            if (arr[mid] < num) {
+                l = mid+1;
             }
             if (arr[mid] > num) {
-                r = mid;
+                r = mid-1;
             }
             mid = (l + r) / 2;
         }
@@ -33,7 +36,7 @@ public class BinarySearch implements Search {
     public static void main(String[] args) {
         int[]arr=new int[]{1,2,5,9,11,52,59,63};
         BinarySearch binarySearch = new BinarySearch();
-        int search = binarySearch.search(arr, 3);
+        int search = binarySearch.search(arr, 63);
         System.out.println(search);
         System.out.println(arr[search]);
     }

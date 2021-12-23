@@ -15,6 +15,7 @@ public class Test {
     }
 
     public static void main(String[] args) {
+
         /*print(1);
         //负数取反+1，即补码
         print(-1);

@@ -10,7 +10,7 @@ public class BuildArr {
         int i1 = (int) (Math.random() * maxLength);
         Integer[]arr=new Integer[i1];
         for (int i=0;i<i1;i++){
-            int i2 = (int) (Math.random() * maxValue);
+            int i2 = (int) (Math.random() * maxValue)-(int) (Math.random() * maxValue);
             arr[i]=i2;
         }
         return arr;
