@@ -25,10 +25,9 @@ public class Test {
         Node pre;
         Node next;
         while (head.next != null) {
-            next = head.next;
             pre = head;
+            next = head.next;
             head = next;
-
         }
         return head;
     }
