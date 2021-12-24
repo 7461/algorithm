@@ -1,11 +1,11 @@
-package demo1;
+package common;
 
 /**
  * @description:
  * @author:guf
  * @createTime:2021/12/20 10:39
  */
-public class Test {
+public class Common {
     public static void print(int a) {
         for (int i = 31; i >= 0; i--) {
             //左移之后做与运算
