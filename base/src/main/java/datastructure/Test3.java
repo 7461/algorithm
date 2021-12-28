@@ -7,4 +7,7 @@ package datastructure;
  * @Description:双向链表实现队列
  */
 public class Test3 {
+    public static void main(String[] args) {
+
+    }
 }
